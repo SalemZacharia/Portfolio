@@ -3,6 +3,7 @@ import {
   About,
   Contact,
   Experience,
+  Hero,
   Navbar,
   Works,
   StarsCanvas,
@@ -15,8 +16,10 @@ const App = () => {
       <div className="realtive z-0 bg-primary">
         <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center"></div>
         <Navbar />
+        <About />
       </div>
-      <About />
+
+      <Hero />
       <Experience />
       <Tech />
       <Works />

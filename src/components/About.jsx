@@ -7,16 +7,8 @@ import { services } from "../constants";
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 import { fadeIn, textVariant } from "../utils/motion";
-const ServiceCard = ({ title, description, icon, index }) => {
-  return (
-    <Tilt className="xs:w-[250px] w-full">
-      <motion.div
-        variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
-        className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
-      ></motion.div>
-    </Tilt>
-  );
-};
+import { SectionWrapper } from "../hoc";
+
 const About = () => {
   const openLinkedInProfile = () => {
     window.open("https://www.linkedin.com/in/zacharia-achref-salem-3760b2262/");
@@ -28,7 +20,7 @@ const About = () => {
     );
   };
   return (
-    <section className="flex flex-col lg:flex-row justify-center items-center h-screen p-8">
+    <section className="flex flex-col lg:flex-row justify-center items-center h-screen p-8 mb-20">
       <div className="mb-8 lg:mb-0 lg:mr-40">
         <img
           src={profilpic}
@@ -56,13 +48,8 @@ const About = () => {
           </button>
         </div>
       </div>
-      <div className="mt-20 flex flex-wrap gap-10">
-        {services.map((service, index) => (
-          <ServiceCard key={service.title} index={index} {...service} />
-        ))}
-      </div>
     </section>
   );
 };
 
-export default About;
+export default SectionWrapper(About, "about");

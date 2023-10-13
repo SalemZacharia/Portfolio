@@ -3,48 +3,42 @@ import React from "react";
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
 import { profilpic } from "../assets";
-const Hero = () => {
-  const openLinkedInProfile = () => {
-    window.open("https://www.linkedin.com/in/zacharia-achref-salem-3760b2262/");
-  };
+import { services } from "../constants";
+import { Tilt } from "react-tilt";
+import { motion } from "framer-motion";
+import { fadeIn, textVariant } from "../utils/motion";
 
-  const downloadCV = () => {
-    // Add your CV download logic here
-    // For simplicity, let's just open a new tab with a sample PDF URL
-    window.open(
-      "https://www.linkedin.com/in/zacharia-achref-salem-3760b2262/overlay/1635526641342/single-media-viewer/?profileId=ACoAAEBxKooBvkbYh8E_yMyCDEmdE_pHw7DC-oo"
-    );
-  };
-
+const ServiceCard = ({ title, description, icon, index }) => {
   return (
-    <section className="flex flex-col lg:flex-row justify-center items-center h-screen p-8">
-      {/* Picture */}
-      <div className="mb-8 lg:mb-0 lg:mr-40">
-        <img
-          src={profilpic} // Assuming profilpic is a variable holding your image URL
-          alt="Zacharia Achref Salem profile picture"
-          className="rounded-full w-60 h-60"
-        />
-      </div>
-      {/* Message */}
-      <div className="text-center  lg:text-left">
-        <p className="text-gray-500 mb-4">Hello, I'm</p>
-        <p className="text-xl font-bold mb-6 lg:mb-2">Zacharia Achref Salem</p>
-        <p className="text-gray-500 mb-4">I'm a fullstack developer.</p>
-        <div className="flex justify-center lg:justify-start">
-          <button
-            className="btn bg-white hover:bg-black hover:text-white text-black rounded-full mr-4 h-10 w-40"
-            onClick={openLinkedInProfile}
-          >
-            LinkedIn
-          </button>
-          <button
-            className="btn bg-white hover:bg-black hover:text-white text-black rounded-full h-10 w-40"
-            onClick={downloadCV}
-          >
-            Download CV
-          </button>
+    <Tilt className="xs:w-[250px] w-full">
+      <motion.div
+        variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
+        className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
+      >
+        <div
+          options={{
+            max: 45,
+            scale: 1.05,
+            speed: 450,
+          }}
+          className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
+        >
+          <img src={icon} alt={title} className="w-16 h-16 object-contain" />
+          <h3 className="text-white text-[20px] font-bold text-center">
+            {title}
+          </h3>
         </div>
+      </motion.div>
+    </Tilt>
+  );
+};
+const Hero = () => {
+  return (
+    <section className="flex flex-col lg:flex-row justify-center items-center h-screen p-8 w-full lg:mb-0 mb-20">
+      <div className="mt-20 flex flex-wrap gap-10 justify-center lg:justify-start">
+        {services.map((service, index) => (
+          <ServiceCard key={service.title} index={index} {...service} />
+        ))}
       </div>
     </section>
   );

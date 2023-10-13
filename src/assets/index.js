@@ -20,9 +20,20 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import vite from "./tech/vite.svg.png";
+import python from "./tech/python.svg.png";
+import net from "./tech/net.svg.png";
+import dj from "./tech/dj.png";
+import mysql from "./tech/mysql.png";
+import laravel from "./tech/laravel.png";
+import spring from "./tech/spring.png";
+import angular from "./tech/angular.png";
 import monlog from "./monlog.svg";
 import monlogo from "./monlogo.png";
 import meta from "./company/meta.png";
+import sfm from "./company/sfm.jpg";
+import tf from "./company/teamsoft.png";
+import telnet from "./company/telnet.jpg";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
@@ -30,8 +41,25 @@ import profilpic from "./profilpic.jpg";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import eco from "./ecovolunteers.png";
+import raskt from "./raskt.png";
+import easy from "./EasyQ.png";
 
 export {
+  raskt,
+  easy,
+  eco,
+  vite,
+  python,
+  net,
+  dj,
+  angular,
+  mysql,
+  spring,
+  laravel,
+  sfm,
+  telnet,
+  tf,
   profilpic,
   monlog,
   logo,

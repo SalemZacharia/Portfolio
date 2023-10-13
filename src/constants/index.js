@@ -5,24 +5,26 @@ import {
   web,
   javascript,
   typescript,
-  html,
-  css,
   reactjs,
   redux,
   tailwind,
   nodejs,
   mongodb,
   git,
-  figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
   threejs,
+  sfm,
+  telnet,
+  tf,
+  laravel,
+  mysql,
+  spring,
+  angular,
+  net,
+  python,
+  eco,
+  easy,
+  raskt,
 } from "../assets";
 
 export const navLinks = [
@@ -54,19 +56,19 @@ const services = [
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "Computer engineer",
     icon: creator,
   },
 ];
 
 const technologies = [
   {
-    name: "HTML 5",
-    icon: html,
+    name: ".net",
+    icon: net,
   },
   {
-    name: "CSS 3",
-    icon: css,
+    name: "Python",
+    icon: python,
   },
   {
     name: "JavaScript",
@@ -105,9 +107,22 @@ const technologies = [
     icon: git,
   },
   {
-    name: "figma",
-    icon: figma,
+    name: "laravel",
+    icon: laravel,
   },
+  {
+    name: "mysql",
+    icon: mysql,
+  },
+  {
+    name: "Spring Boot",
+    icon: spring,
+  },
+  {
+    name: "Angular",
+    icon: angular,
+  },
+
   {
     name: "docker",
     icon: docker,
@@ -116,50 +131,36 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    title: "Angular & Ionic / Spring Boot",
+    company_name: "SFM Technologies",
+    icon: sfm,
+    iconBg: "#FEFEFF",
+    date: "March 2021 - April 2021",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "This project aims to facilitate administrative procedures for citizens,to lighten waiting rooms (with a view to the Covid19 period).",
+      "and to reduce the waiting time thanks to an application where the citizen can reserve a ticket and wait at the place of your convenience.",
       "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "his project was composed of two applications, a mobile application for customers and an admin part for the CEO and employees of each company that registers for our solution.",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    title: "Data Extraction",
+    company_name: "TELNET",
+    icon: telnet,
+    iconBg: "#FFFFFF",
+    date: "Jun 2022 - Jul 2022",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "I developed a program using Python to extract valuable data from digitized invoices.",
+      "The program employed object detection techniques to identify crucial elements such as tables, logos, and text within the invoices.",
+      " For this purpose, I utilized popular Python libraries and frameworks, including TensorFlow for object detection and pytesseract for Optical Character Recognition (OCR).",
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
+    title: "React Native",
+    company_name: "TeamSoft",
+    icon: tf,
+    iconBg: "#FFFFFF",
     date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -198,9 +199,9 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "EcoVolunteers",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Ecovolunteers is a social network designed for volunteers to collaborate and work together. It features a 3D component called Ecomee, where users can customize their own Ecomee avatars. Within Ecomee, users can engage in instant chat conversations, create clubs to compete for the top spot based on worldwide activity levels. The platform is dedicated to fostering environmental activities and collective efforts for a sustainable future.",
     tags: [
       {
         name: "react",
@@ -214,17 +215,21 @@ const projects = [
         name: "tailwind",
         color: "pink-text-gradient",
       },
+      {
+        name: "express",
+        color: "pink-text-gradient",
+      },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: eco,
+    source_code_link: "https://github.com/dhiabj/eco-volunteers",
   },
   {
-    name: "Job IT",
+    name: "EasyQ",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "EasyQ is a project comprising two applications, a web application using Angular and a mobile application using Ionic, both supported by a Spring Boot backend. The aim is to streamline administrative processes for citizens during the COVID-19 pandemic. The project offers comprehensive management from application to service counter, featuring a mobile app with a map and itinerary that provides estimated wait times and ticket information.",
     tags: [
       {
-        name: "react",
+        name: "Angular",
         color: "blue-text-gradient",
       },
       {
@@ -232,32 +237,40 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "Ionic",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Spring boot",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "mysql",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
+    image: easy,
     source_code_link: "https://github.com/",
   },
   {
-    name: "Trip Guide",
+    name: "Rasketa",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Rasketa is an online platform for the sale of second-hand tennis items between individuals. It includes features such as favorites, a chat function, and a bidding system allowing users to negotiate and lower prices.",
     tags: [
       {
-        name: "nextjs",
+        name: "React Native",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "mongoDB",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "ExpressJs",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
+    image: raskt,
     source_code_link: "https://github.com/",
   },
 ];
