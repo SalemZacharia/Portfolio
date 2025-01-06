@@ -44,8 +44,9 @@ import tripguide from "./tripguide.png";
 import eco from "./ecovolunteers.png";
 import raskt from "./raskt.png";
 import easy from "./EasyQ.png";
-
+import airbus from "./company/Airbus.svg.png";
 export {
+  airbus,
   raskt,
   easy,
   eco,
